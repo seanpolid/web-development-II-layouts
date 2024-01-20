@@ -1,0 +1,192 @@
+@media all {
+
+    body, ul, h1, h2 {padding: 0; margin: 0;}
+
+}
+
+@media screen {
+
+    :root {
+        --border: 7px solid #F18606;
+        --primaryColor: #fff;
+        --secondaryColor: #333;
+    }
+
+    /* General */
+    .container {width: 1020px; margin: 0 auto;}
+    body {color: var(--secondaryColor); overflow-x: hidden;}
+    a {color: var(--primaryColor); text-decoration: none;}
+    a:focus, .hamburgerMenu:focus {outline-offset: 4px; outline: 2px solid #000;}
+    header a:focus, .hamburgerMenu:focus {outline: 2px solid var(--primaryColor);}
+    h2, p {text-align: center;}
+    header .logo, .banned a, .collage h2, .longboards li, footer {text-transform: uppercase;}
+    header div, .longboards {font-family: 'Righteous', cursive;}
+    .banned, .vintageDecks, .skateShoes, .longboards, footer {box-sizing: border-box;}
+    .banned, .collage, .longboards li, footer {font-family: 'Open Sans', sans-serif;}
+    .banned, .vintageDecks, .skateShoes, .longboards, .longboards li {display: flex; flex-direction: column; justify-content: start; align-items: center;}
+    .image {background-repeat: no-repeat; background-size: cover; background-position: center; display: block;}
+    .imageDescr {font-size: 0; height: 0; width: 0;}
+
+    /* Header */ 
+    header {background-image: url(../assets/city-skate-hero.webp); height: 567px;}
+    header div {font-weight: 400; padding: 14px 30px; display: flex; flex-direction: row; justify-content: space-between;}
+    header .logo {font-size: 36px;}
+    header ul {list-style: none; display: flex; gap: 7px; font-size: 36px; justify-content: end;}
+    header nav a:hover {color: #F18606;}
+    .hamburgerMenu {display: none;}
+    
+    /* Banned */
+    .banned {border-top: var(--border);}
+    .banned {padding: 132px 30px 156px; gap: 17px;}
+    .banned h2 {text-transform: lowercase; font-weight: 300; font-size: 1.61rem;}
+    .banned a {font-size: 14px; font-weight: 700; margin-top: 31px; color: var(--secondaryColor)}
+    .banned a:hover {color: #F18606;}
+
+    /* Collage */
+    .collage {position: relative;}
+    .vintageDecks, .skateShoes {position: absolute;}
+    .vintageDecks, .skateShoes {background: #000; color: var(--primaryColor); z-index: 10;}
+    .collage h2 {font-size: 16px;}
+    .collage p {font-size: 14px; line-height: 2.6; margin-top: 8px;}
+    .vintageImage {background-image: url(../assets/vintage-decks.webp); height: 340px; width: 680px;}
+    .vintageDecks {top: 0; right: 0; width: 340px; height: 528px; padding: 143px 60px 0; gap: 0;}
+    .skateboardIcon {background-image: url(../assets/skateboard-icon.png); position: absolute; width: 142px; height: 48px; top: 367px;}
+    .sunsetImage {background-image: url(../assets/skateboarder-sunset-silhouette.webp); width: 340px; height: 504px; display: block; float: left;}
+    .daytimeImage {background-image: url(../assets/skateboarder-daytime.webp); width: 680px; height: 504px; right: 0; display: block; float: left;} 
+    .blurredImage {background-image: url(../assets/skateboarder-blurred-motion.webp); width: 1020px; height: 538px; display: block; clear: left;}
+    .skateShoes {width: 340px; height: 318px; top: 755px; padding: 80px 50px 0;}
+
+    /* Longboard */
+    .longboards {border-top: var(--border); border-bottom: var(--border); padding: 70px 80px 95px;}
+    .longboards h2 {font-size: 40px;}
+    .longboards ul {margin-top: 42px; display: grid; list-style: none; gap: 40px; grid-template-columns: repeat(3, 1fr); width: 100%;}
+    .longboards li {gap: 18px; font-size: 23px; font-weight: 700;}
+    .longboards a {color: var(--secondaryColor);}
+    .trucksImage {background-image: url(../assets/trucks.webp); width: 100%; height: 220px;}
+    .bearingsImage {background-image: url(../assets/bearings.webp); width: 100%; height: 220px;}
+    .wheelsImage {background-image: url(../assets/wheels.webp); width: 100%; height: 220px;}
+    
+    /* Footer */
+    footer {background: #999999; display: grid; padding: 35px 0px 47px; grid-template-columns: repeat(4, 1fr); font-weight: 700;}
+    footer a:hover {color: #e6e6e6;}
+    footer h2, footer a, footer .socialMedia {padding: 0; color: black;}
+    footer ul {list-style: none; gap: 14px;}
+    .contact, footer ul, footer.socialMedia {display: flex; flex-direction: column;}
+    .contact {margin-left: 75px; gap: 18px;} 
+    .contact h2 {margin: 0; text-align: left; font-size: 14px;}
+    .secondaryNav {margin-left: 22px; gap: 30px;}
+    .longboardNav {margin-left: -30px;}
+    .socialMedia {display: flex; gap: 23px; margin-left: 4px;}
+    .icon {display: inline-block; height: 39px;}
+    .instagramIcon {background: url(../assets/social-media.webp) 0px; width: 38px;}
+    .youtubeIcon {background: url(../assets/social-media.webp) -62px; width: 44px;}
+    .twitterIcon {background: url(../assets/social-media.webp) -132px; width: 40px; margin-left: 2px;}
+    footer div p {font-weight: 300; font-size: 12px; font-family: 'Roboto', sans-serif; margin-top: 38px; text-transform: none;}
+
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* General */
+    .container {width: 100%;}
+
+    /* Collage */
+    .vintageImage {width: 67%;}
+    .vintageDecks, .sunsetImage, .skateShoes {width: 34%;}
+    .daytimeImage {width: 66%;}
+    .blurredImage {width: 100%; background-position: right;}
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Collage */
+    .vintageDecks {padding-left: 40px; padding-right: 40px;}
+    .skateShoes {padding-left: 25px; padding-right: 25px;}
+
+    /* Longboards */
+    .longboards ul {grid-template-columns: 1fr 1fr;}
+
+    /* Footer */
+    footer {grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 70px 80px;} 
+    .contact, .secondaryNav, .longboardNav, .socialMedia {margin: 0;}
+    .secondaryNav {grid-column: 1/2; grid-row: 1/2;}
+    .longboardNav {grid-column: 1/2; grid-row: 2/3;}
+    .contact {grid-column: 3/4; grid-row: 1/2;}
+    footer div {grid-column: 3/4; grid-row: 2/3;}
+    footer div p {text-align: left;}
+
+}
+
+@media screen and (max-width: 800px) {
+
+    /* Header */
+    header div {align-items: center;}
+    header nav {display: none;}
+    header nav[class~="visible"] {display: block; position: absolute; right: 34px; top: 70px; background: #000; padding: 0; border-radius: 5px;}
+    header nav ul {flex-direction: column; gap: 0;}
+    header nav li {width: 100%;}
+    header nav a {padding: 10px 30px 10px 15px; width: 100%; display: block; box-sizing: border-box; font-size: 28px;}
+    .hamburgerMenu {display: block; color: var(--primaryColor); text-decoration: none; background: transparent; cursor: pointer; border: 0;}
+    
+    /* Collage */
+    .vintageDecks {padding-top: 70px; height: 440px;}
+    .skateboardIcon {top: 310px;}
+    .daytimeImage {background-position-x: 40%;}
+    
+}
+
+@media screen and (max-width: 720px) {
+    
+    /* Collage */
+    .skateShoes {padding-top: 60px;}
+
+}
+
+@media screen and (max-width: 650px) {
+    
+    /* Banned */
+    .banned {padding: 112px 30px 136px;}
+
+    /* Collage */
+    .vintageImage {width: 100%;}
+    .vintageDecks {position: relative; width: 100%; height: auto; padding: 60px 50px;}
+    .skateboardIcon {display: block; position: static; margin-top: 30px;} 
+    .sunsetImage {width: 50%; float: left; height: 300px; background-position-y: 20%;}
+    .daytimeImage {width: 50%; float: left; background-position: 20%; height: 300px;}
+    .skateShoes {width: 100%; height: auto; padding: 80px 40px; position: static;}
+    .blurredImage {display: block; height: 340px;}
+
+    /* Longboards & footer */
+    .longboards, footer {padding-left: 60px; padding-right: 60px;}
+    .longboards ul {grid-template-columns: 1fr; gap: 70px;}
+
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Header */
+    header .logo {font-size: 30px;}
+
+    /* Footer */
+    footer {grid-template-columns: 1fr; gap: 60px;}
+    .secondaryNav, .longboardNav, .contact, footer div {grid-column: auto;}
+    .secondaryNav {grid-row: 1/2;}
+    .longboardNav {grid-row: 2/3;}
+    .contact {grid-row: 3/4;}
+    footer div {grid-row: 4/5;}
+
+}
+
+@media print {
+
+    a {color: #000;}
+    h2 {font-size: 20pt;}
+    body {font: 16pt sans-serif;}
+
+    .logo {font-size: 26pt; text-decoration: none;}
+    .banned, .vintageDecks, .skateShoes, .longboards, h2, p  {margin: 0; padding: 0;}
+    .hamburgerMenu, .imageDescr, nav {display: none;}
+    .banned, .vintageDecks, .skateShoes, .longboards, .contact, footer div {margin-top: 20pt; display: block;}
+
+}

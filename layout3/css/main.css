@@ -1,0 +1,153 @@
+
+@media all {
+
+    body {font: 400 18px/1.3 'PT Sans', sans-serif; position: relative; margin: 0; padding: 0;}
+    header, nav, main, section, aside, footer, div {box-sizing: border-box;}
+    footer abbr[title] {text-decoration: none;}
+
+}
+
+@media screen {
+
+    /* General */
+    :root {--primary-color: #502712; --secondary-color: #fff; --accent-color: #000;}
+    a:focus {outline: 2px solid var(--primary-color); outline-offset: 3px;}
+    .hero {width: auto;}
+    .image-descr {font-size: 0; width: 0; height: 0;}
+    #jump, img, header nav li, .views a, #chemex, .icon {display: block;}
+    .views a, footer .icon {outline-color: var(--secondary-color);}
+    .views a, .menu h1, .menu h2 {font-variant: all-small-caps;}
+
+    /* Masthead */
+    #jump {position: absolute; top: 10px; left: 10px; font-size: 0;}
+    #jump:focus {color: var(--accent-color); font-size: inherit;}
+    #logo {height: 75px; width: 193px; margin-left: 1px;}
+    header {padding: 30px 0;}
+    header form {display: none;}
+    header nav ul {list-style: none; padding: 0;}
+    header nav li {float: left; padding: 12px 0;}
+    header .left-nav li {margin-right: 30px;}
+    header .right-nav li{margin-left: 30px;}
+    header a {font-size: 16px; color: var(--primary-color);}
+    header a:hover {color: var(--accent-color);}
+
+    /* First hero */
+    main .bar {height: 20px; background: var(--primary-color);}
+    #hero-1 {background: url(../images/caturra-coffee-hero-image.webp) no-repeat center / cover; min-height: 454px;}
+
+    /* Views */
+    .views {margin: 60px auto;}
+    .views h1 {font-weight: 700; font-size: 24px; line-height: 1.3;}
+    .views h1, .views p, .views a {color: var(--secondary-color); text-align: center;}
+    .views .content {background: var(--primary-color); padding: 40px 20px; height: 280px;}
+    .views p {margin-top: 9px; line-height: 1.8;}
+    .views a {margin: 29px auto 0; font-size: 22px;}
+
+    /* Second hero */
+    #hero-2 {background: url(../images/caturra-coffee-view-to-street.webp) no-repeat center / cover; min-height: 590px;}
+
+    /* New Menu items */
+    .menu {margin: 62px 0 60px; position: relative;}
+    .menu .line {position: absolute; top: 39px; border: 0px solid var(--primary-color); width: 100%; height: 1px; border-width: 1px 0 0; z-index: -1}
+    .menu h1 {font-size: 34.5px; color: var(--secondary-color); background: var(--primary-color); padding: 18px 0 24px; text-align: center;}
+    .menu-items {margin-top: 21px;}
+    .menu h2 {font-size: 27px; color: var(--primary-color); margin: 15px 0 0;}
+    .menu-items ul {list-style: none; padding: 0;}
+    .menu-items li {margin-top: 15px;}
+    .menu .container-xl {border-bottom: 1px solid var(--primary-color); padding-bottom: 60px;}
+
+    /* Second hero */
+    #chemex {width: fit-content; margin: 0 auto;}
+    #chemex img {min-height: 461px; max-width: 709px; }
+
+    /* Footer */
+    footer {padding: 50px 0 35px; background: var(--primary-color); margin-top: 59px; color: var(--secondary-color); font-size: 16px;}
+    footer p {margin: 0;}
+    footer .hours {margin-top: 16px;}
+    .icon {width: 50px; min-height: 52px; float: left; margin-right: 15px; background-repeat: no-repeat;}
+    #instagram-icon {background: url(../images/social-media-icons.webp)}
+    #twitter-icon {background: url(../images/social-media-icons.webp) -65px;}
+    #facebook-icon {background: url(../images/social-media-icons.webp) -128px;}
+    .clear {clear: left;}
+    footer p[role*="contentinfo"] {margin-top: 15px;}
+
+}
+
+@media screen and (max-width: 1070px) {
+
+    /* Masthead */
+    header .left-nav li {margin-right: 20px;}
+    header .right-nav li {margin-left: 20px;}
+
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Masthead */
+    header {padding-top: 12px;}
+    #logo {width: auto; height: 53px; margin: 18px 0 0 2px;}
+
+    /* Views */
+    .views {margin-bottom: 90px;}
+    .views .content {height: auto; padding-bottom: 60px;}
+
+    /* Footer */
+    footer .col-sm-6:nth-child(n + 3) {margin-top: 30px;}
+
+}
+
+@media screen and (max-width: 783px) {
+
+    /* Masthead */
+    header nav {display: none;}
+    header form {display: block; margin-top: 30px;}
+    header select {width: 100%;}
+    header .col-12 {width: 67%;}
+    #logo {height: 75px; margin: 20px auto 0;}
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* Views */
+    .views .col-md-4:nth-child(n + 2) {margin-top: 30px;}
+
+    /* menu items */
+    .menu .container-xl .menu-items:last-child {margin-top: 9px;}
+    .menu .container-xl .menu-items:last-child li {margin-top: 14px;}
+
+    /* second hero */
+    #chemex img {min-height: auto; width: 100%;}
+    #chemex {padding: 0 15px; display: block;}
+
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Footer */
+    footer {padding-bottom: 50px;}
+    footer .row .col-sm-6:nth-child(n + 2) {margin-top: 30px;}
+
+}
+
+@media print {
+
+    /* General */
+    #jump, header nav, header form, #hero-2, .menu .line, #chemex, .image-descr {display: none;}
+    body, a {font-size: 15pt; color: #000;}
+    h1 {font-size: 20pt;}
+    h2 {font-size: 17pt;}
+
+    /* Views */
+    .views {margin-top: 15pt;}
+    .views .content {margin-top: 20pt;}
+
+    /* Menu items */
+    .menu {border-bottom: 1px solid #000; padding-bottom: 20pt; margin-top: 40pt;}
+    .menu ul {list-style: none; padding: 0;}
+
+    /* Footer */
+    footer .row div {display: block; width:100%;}
+
+}
+

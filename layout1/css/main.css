@@ -1,0 +1,238 @@
+/* General */
+
+@media all {
+
+    header, main, section, nav, footer, aside, article {display: block; box-sizing: border-box;}
+    body {font: 400 16px/1.3 'Noto Sans JP',  sans-serif; color: #000; margin: 0; padding: 0;}
+    h2 {font: 300 35px/1 'Averia Serif Libre', cursive;}
+    #logo {font-family: 'Economica', sans-serif; font-variant: small-caps; line-height: 35px; display: flex; flex-direction: column; align-items: center; margin: 0;}
+
+}
+
+@media screen {
+
+    .container {width: 1040px; margin: 0 auto;}
+    
+
+    /* Images and elements that span the whole background */
+    header {background: url("../layout1-assets/barn-background.webp") no-repeat 50% 35%; background-size: cover; height: 583px; width: 100%;}
+
+    /* Masthead section*/
+    #logoFirstWord {font-weight: 700; font-size: 48px; margin-top: 14px;}
+    #logoSecondWord {font-weight: 400; font-size: 38px; margin-top: 4px;}
+    header nav ul {display: flex; justify-content: center; list-style: none; margin: 25px 0 0 -38px;}
+    header nav ul li {margin: 0 15px;}
+    header nav a {text-decoration: none; color: #000; font: 700 16px/1 'Averia Serif Libre';}
+    header nav a:hover, nav a:focus {color: #980404;}
+
+    /* Virtual tour section*/
+    .virtualTour {display: flex; flex-direction: column; align-items: center; margin-top: 98px; margin-bottom: 114px; color: #980404;}
+    .virtualTour h2 {color: #980404; margin-bottom: 49px; text-align: center;}
+    .virtualTour a {padding: 15px 30px; border: 1px solid #980404; color: #980404; font-size: 14px; text-decoration: none;}
+    .virtualTour a:hover, .virtualTour a:focus {background-color: #980404; color: #fff;}
+
+    /* Farm fresh section */
+    .farmFresh {display: flex; flex-direction: row; justify-content: center;}
+    .farmFresh div {display: flex; flex-direction: column; align-items: center; width: calc(1040px * 0.5);}
+    .farmFresh p {text-align: center; line-height: 1.8; padding: 0 80px;}
+    .farmFresh h2 {margin: 40px 0 4px;}
+    #chickenPhoto {background: url("../layout1-assets/chicken.webp") no-repeat center; background-size: cover; min-height: 400px; width: 520px; box-sizing: border-box;}
+    #squashPhoto {background: url("../layout1-assets/squash.webp") no-repeat center; background-size: cover; min-height: 400px; width: 520px; box-sizing: border-box;}
+
+    /* Saturday market */
+    hr {display: block; border: 4px solid #FC0; width: 100%; box-sizing: border-box; margin-top: 38px;}
+    .saturdayMarket {margin-top: 60px;}
+    .saturdayMarket>div {display: flex; justify-content: center;}
+    .saturdayMarket>div:first-child div {width: calc(1040px * 0.48);}
+    .saturdayMarket>div:first-child a {margin-left: 40px;}
+    .saturdayMarket h2 {margin: 0; line-height: 45px; margin-bottom: 30px;}
+    .saturdayMarket>div div p {margin: 0;}
+    .saturdayMarket>div:last-child {margin-top: 40px;}
+    .saturdayMarket>div:last-child div {display: flex; flex-direction: column; align-items: center;}
+    .saturdayMarket .columnTwoContent {margin: 0 36px;}
+    .saturdayMarket>div:last-child a {width: calc(1040px * 0.31);}
+    .saturdayMarket>div:last-child div p {margin-top: 21px;}
+    #beansPhoto {background: url("../layout1-assets/beans.webp") no-repeat center; background-size: cover; width: 500px; min-height: 314px;}
+    #guitarPhoto {background: url("../layout1-assets/guitar.webp") no-repeat center; background-size: cover; min-height: 250px;}
+    #facePaintingPhoto {background: url("../layout1-assets/face-painting.webp") no-repeat center; background-size: cover; min-height: 250px;}
+    #cauliflowerPhoto {background: url("../layout1-assets/cauliflower.webp") no-repeat center; background-size: cover; min-height: 250px;}
+
+    /* Farmshares */
+    #farmsharesPhoto {background: url("../layout1-assets/vegetables.webp") no-repeat center; background-size: cover; min-height: 409px; width: 100%; display: block; margin-top: 59px;}
+    .farmshares h2 {text-align: center; background-color: #530001; padding: 60px 0; margin: 0;}
+    .farmshares h2 a {color: #fff; font-size: 40px; text-decoration: none;}
+    .farmshares p {margin: 60px auto 40px; width: 80%; font: 300 30px/1.3 'Averia Serif Libre',cursive; text-align: center;}
+    .farmshares form {width: 50%; margin: 41px auto 0; position: relative; left: 0; top: 0;}
+    .farmshares input {width: 100%; border: 0; padding: 10px 5px; font-size: 12.5px; letter-spacing: 0.2px; border-bottom: 1px solid #363636;}
+    .farmshares button {position: absolute; width: 60px; height: 20px; background-image: url("../layout1-assets/sprite.webp"); background-size: cover; background-color: transparent; border: 0; top: 3px; left: 94.75%; cursor: pointer;}
+
+    /* Event spaces */
+    .eventSpaces {color: white; background-color: #228500; padding: 31px 0 60px; margin-top: 60px;}
+    .eventSpaces .row {display: flex; justify-content: center; margin-top: -5px;} 
+    .eventSpaces .row div {width: 30%;}
+    .eventSpaces .columnTwoContent {margin: 0 52px;}
+    .eventSpaces h3 {font-size: 16px;}
+    .eventSpaces p {line-height: 1.6; font-weight: 300; margin-top: 17px;}
+
+    /* Footer */
+    footer {margin-top: 59px;}
+    footer>div {display: flex; justify-content: space-between;}
+    footer nav, footer>div div {width: 32%;}
+    footer ul {list-style: none; padding: 0;}
+    footer nav li {margin-bottom: 16px;}
+    footer nav a {text-decoration: none; color: black;}
+    footer nav a:hover, footer nav a:focus {color: #980404;}
+    .companyInfo p {text-align: center;}
+    .companyInfo p:nth-child(2) {margin-top: 40px;}
+    .companyInfo p:nth-child(3) {margin-top: 16px;}
+    .companyInfo #logoFirstWord {margin-top: -2px;}
+    .companyInfo #logoSecondWord {margin-top: 5px;}
+    .socialMedia {display: flex; justify-content: flex-end;}
+    .socialMedia a {background-size: cover; width: 40px; min-height: 45px; max-height: 45px; display: block; margin-top: 15px;}
+    .socialMedia a:nth-child(n + 1) {margin-left: 18px;}
+    #instagramIcon {background: url("../layout1-assets/sprite.webp") no-repeat -6px -115px;}
+    #twitterIcon {background: url("../layout1-assets/sprite.webp") no-repeat -6px -250px;}
+    #facebookIcon {background: url("../layout1-assets/sprite.webp") no-repeat -6px -398px;}
+}
+
+/* For internet explorer 11 compatability */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    header {background-image: url("../layout1-assets/barn-background.jpg")}
+    #chickenPhoto {background-image: url("../layout1-assets/chicken.jpg")}
+    #squashPhoto {background-image: url("../layout1-assets/squash.jpg")}
+    #beansPhoto {background-image: url("../layout1-assets/beans.jpg")}
+    #guitarPhoto {background-image: url("../layout1-assets/guitar.jpg")}
+    #facePaintingPhoto {background-image: url("../layout1-assets/face-painting.jpg")}
+    #cauliflowerPhoto {background-image: url("../layout1-assets/cauliflower.jpg")}
+    #farmsharesPhoto {background-image: url("../layout1-assets/vegetables.jpg")}
+    .farmshares button {background-image: url("../layout1-assets/sprite.jpg")}
+    #instagramIcon {background-image: url("../layout1-assets/sprite.jpg")}
+    #twitterIcon {background-image: url("../layout1-assets/sprite.jpg")}
+    #facebookIcon {background-image: url("../layout1-assets/sprite.jpg")}
+
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .container {width: 100%;}
+    .saturdayMarket>div:last-child div, #guitarPhoto, #facePaintingPhoto, #cauliflowerPhoto {width: 100%}
+
+    /* Virtual tour section*/
+    .virtualTour {padding: 0 30px;}
+    
+    /* Farm fresh section */
+    .eggs, .vegetables {width: 100%; box-sizing: border-box;}
+    .eggs p, .vegetables p {padding: 0 81px;}
+    #chickenPhoto, #squashPhoto {width: 100%;}
+
+    /* Saturday market */
+    .saturdayMarket {margin-top: 61px; padding: 0 31px;}
+    .saturdayMarket .columnTwoContent {margin: 0 33px;}
+
+    /* Event spaces */
+    .eventSpaces {padding-left: 33px; padding-right: 33px}
+    .eventSpaces .columnTwoContent {margin: 0 50px;}
+
+    /* Footer */
+    footer {padding: 0 33px;}
+
+}    
+
+@media screen and (max-width: 800px) {
+
+    /* Virtual tour section*/
+    .virtualTour {margin-top: 79px; margin-bottom: 97px;}
+
+    /* Farm fresh section */
+    .farmFresh {flex-direction: column; margin-top: 0px;}
+    .farmFresh div {width: 100%;}
+    .farmFresh p {padding: 0 30px;}
+    .vegetables {margin-top: 60px;}
+
+    /* Saturday market */
+    .saturdayMarket {padding: 0 32px; margin-top: 59px;}
+    .saturdayMarket .columnTwoContent {margin: 0 25px;}
+    hr {margin-top: 60px;}
+
+    /* Event spaces */
+    .eventSpaces .row {flex-wrap: wrap; justify-content: space-between;}
+    .eventSpaces .row div {width: 45%; box-sizing: border-box;}
+    .eventSpaces .columnTwoContent {margin: 0;}
+    .eventSpaces .columnThreeContent {margin-top: 22px;}
+    /* Footer */
+
+}
+
+@media screen and (max-width: 700px) {
+
+    /* Virtual tour section*/
+    .virtualTour {padding: 0 20px;}
+
+    /* Footer */
+    footer>div {flex-wrap: wrap; justify-content: space-between;} 
+    footer>div nav, footer>div div {width: 48%;}
+    .socialMedia {justify-content: flex-start;}
+    .socialMedia a:nth-child(n) {margin-left: 17px; margin-top: 14px;}
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Masthead section*/
+    header nav ul {flex-wrap: wrap; margin-top: 35px;}
+    header nav ul li:nth-child(n + 3) {margin-top: 21px;}
+    header nav ul li {width: 50%; margin: 0; box-sizing: border-box; text-align: center;}
+
+    /* Saturday market */
+    .saturdayMarket>div:last-child {flex-wrap: wrap; justify-content: space-between;}
+    .saturdayMarket>div:last-child div {width: 48%;}
+    .saturdayMarket .columnTwoContent {margin: 0;}
+
+    /* Farmshares */
+    .farmshares form {width: 80%;}
+
+    /* Event spaces */
+    .eventSpaces .row {display: block;}
+    .eventSpaces .row div {width: 100%;}
+    .eventSpaces .row div:nth-child(n + 2) {margin-top: 40px;}
+
+    /* Footer */
+
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Saturday market */
+    .saturdayMarket div {display: block;}
+    .saturdayMarket div a {width: 100%;}
+ 
+    /* Footer */
+    footer div:nth-child(n) {width: 100%;}
+    .socialMedia {justify-content: center;}
+}
+
+@media print {
+    body {font-size: 12pt;}
+    a {color: #000;}
+    #logoFirstWord {font-size: 28pt;}
+    #logoSecondWord {font-size: 24pt;}
+    h2 {font-size: 18pt;}
+    h3 {font-size: 15pt;}
+    
+    /* Masthead section*/
+    header nav ul {display: none;}
+
+    /* Saturday market */
+    .saturdayMarket>div:first-child p:nth-child(n + 2) {margin: 0;}
+    .columnOneContent p {margin-bottom: 0;}
+    .columnTwoContent p, .columnThreeContent p {margin: 0;}
+
+    /* Farmshares */
+    .farmshares input, .farmshares button {display: none;}
+
+    /* Footer */
+    footer {margin-top: 30px;}
+    footer nav {display: none;}
+    footer #logo {display: none;}
+
+}
