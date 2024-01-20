@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title></title>
+	<title>Cardamom Farm :: Home</title>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,9 +10,9 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <header aria-label="big-red-barn">
-        <h1 id="logo"><span id="logoFirstWord">cardamom</span><span id="logoSecondWord">farm</span></h1>
-        <nav>
+    <header aria-label="Side view of a red barn that's surrounded by a forest." class="image">
+        <h1 class="logo"><span class="logoFirstWord">cardamom</span><span class="logoSecondWord">farm</span></h1>
+        <nav aria-label="Primary">
             <ul>
                 <li><a href="#">About Our Farm</a></li>
                 <li><a href="#">Saturday Market</a></li>
@@ -23,78 +23,80 @@
     </header>
 
     <main>
-        <section class="virtualTour">
-            <h2>Our big red barn is the heart and soul of who we are.</h2>
-            <a href="#">TAKE A VIRTUAL TOUR</a>
+        <section class="virtualTour container" aria-labelledby="virtualTourHeader">
+            <h2 id="virtualTourHeader">Our big red barn is the heart and soul of who we are.</h2>
+            <a href="#">Take a Virtual Tour</a>
         </section>
 
-        <section class="farmFresh">
+        <section class="farmFresh container" aria-labelledby="farmFreshHeader">
             <div class="eggs">
-                <a href="#" id="chickenPhoto"></a>
-                <h2>Farm Fresh Eggs</h2>
+                <a href="#" id="chickenPhoto" class="image" aria-label="A headshot of a chicken."></a>
+                <h2 id="farmFreshHeader">Farm Fresh Eggs</h2>
                 <p>Our happy group of chickens really knows what "free range" means with access to roam all 200 rolling acres of our farm land; they come and go as they please.</p>
             </div>
             <div class="vegetables">
-                <a href="#" id="squashPhoto"></a>
+                <a href="#" id="squashPhoto" class="image" aria-label="A cluster of yellow and green squashes."></a>
                 <h2>Fresh Vegetables</h2>
                 <p>Harvested by hand only at the exact moment of ripeness, our vegetables (and herbs!) have a firmness and taste like no other produce. You have to taste it to believe it.</p>
             </div>
         </section>
         
-        <hr />
-        <section class="saturdayMarket">
-            <div>
+        <div class="line"></div>
+        <section class="saturdayMarket container" aria-labelledby="saturdayMarketHeader">
+            <div class="rowOne">
                 <div>
-                    <h2>Our Saturday Market is a fun day out for the whole family.</h2>
-                    <p>EVERY SATURDAY</p>
-                    <p>MAY THROUGH SEPTEMBER</p>
+                    <h2 id="saturdayMarketHeader">Our Saturday Market is a fun day out for the whole family.</h2>
+                    <p>Every Saturday</p>
+                    <p>May through September</p>
                     <p>8AM TO 3PM</p>
                 </div>
-                <a href="#" id="beansPhoto"></a>
+                <div>
+                    <a href="#" id="beansPhoto" class="image" aria-label="Green beans in multiple colored baskets."></a>
+                </div>
             </div>
-            <div>
+            <div class="rowTwo">
                 <div class="columnOneContent">
-                    <a href="#" id="guitarPhoto"></a>
-                    <p>GREAT MUSIC</p>
+                    <a href="#" id="guitarPhoto" class="image" aria-label="Someone playing the guitar."></a>
+                    <p>Great Music</p>
                 </div>
                 <div class="columnTwoContent">
-                    <a href="#" id="facePaintingPhoto"></a>
-                    <p>FUN FOR THE KIDS</p>
+                    <a href="#" id="facePaintingPhoto" class="image" aria-label="A kid having their face painted."></a>
+                    <p>Fun for the Kids</p>
                 </div>
                 <div class="columnThreeContent">
-                    <a href="#" id="cauliflowerPhoto"></a>
-                    <p>FRUITS AND VEGGIES</p>
+                    <a href="#" id="cauliflowerPhoto" class="image" aria-label="A top view of purple cauliflower."></a>
+                    <p>Fruits and Veggies</p>
                 </div>
             </div>
         </section>
 
-        <section class="farmshares">
-            <a href="#" id="farmsharesPhoto"></a>
-            <h2><a href="#">CSA FARMSHARES</a></h2>
+        <section class="farmshares" aria-labelledby="farmsharesHeader">
+            <a href="#" id="farmsharesPhoto" class="image" aria-label="An assortment of fruits and vegetables."></a>
+            <h2 id="farmsharesHeader"><a href="#">CSA Farmshares</a></h2>
 
             <div class="container">
                 <p>Every week pick up your box of fruits and vegetables from the farm. Your box will contain produce picked fresh just days before you pick it up.</p>
                 <form method="post" action="#">
-                    <input type="email" aria-label="" placeholder="Email address">
-                    <button type="submit" value="">
+                    <input type="email" placeholder="Email address" aria-label="Please input your email.">
+                    <button type="submit" value=""></button>
                 </form>
             </div>
         </section>
 
-        <section class="eventSpaces">
+        <section class="eventSpaces" aria-labelledby="eventSpacesHeader">
             <div class="container">
-                <h2>Event Spaces</h2>
+                <h2 id="eventSpacesHeader">Event Spaces</h2>
                 <div class="row"> 
                     <div class="columnOneContent">
-                        <h3>THE BIG RED BARN</h3>
+                        <h3>The Big Red Barn</h3>
                         <p>Our signature event space provides a breaktaking backdrop for any of your larger event needs. From weddings to large parties the barn will become a part of the memory.</p>
                     </div>
                     <div class="columnTwoContent">
-                        <h3>THE PEACE GARDEN</h3>
+                        <h3>The Peace Garden</h3>
                         <p>Set amongst gorgeous wisteria, draping clemantis and dramatic bougainvillea, our ideallic garden setting is perfect for smaller gatherings. A perfect place for an intimate gathering.</p>
                     </div>
                     <div class="columnThreeContent">
-                        <h3>THE LAVENDER FIELD</h3>
+                        <h3>The Lavender Field</h3>
                         <p>If you want a beautiful outside setting, our lavendar field is a perfect answer. Nestled in among the fragrant plants is setting for up to 100. Overlooks the lovely hills and rushing river.</p>
                     </div>
                 </div>
@@ -104,23 +106,25 @@
 
     <footer>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">ABOUT OUR FARM</a></li>
-                    <li><a href="#">SATURDAY MARKET</a></li>
-                    <li><a href="#">CSA FARMSHARES</a></li>
-                    <li><a href="#">EVENT SPACES</a></li>
-                </ul>
-            </nav>
+            <div>
+                <nav aria-label="Secondary">
+                    <ul>
+                        <li><a href="#">About Our Farm</a></li>
+                        <li><a href="#">Saturday Market</a></li>
+                        <li><a href="#">CSA Farmshares</a></li>
+                        <li><a href="#">Event Spaces</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="companyInfo">
-                <p id="logo"><span id="logoFirstWord">cardamom</span><span id="logoSecondWord">farm</span></p>
-                <p>24678 Rolling Hills Lane</p>
-                <p>Watertown, ME 03241</p>
+                <p class="logo"><span class="logoFirstWord">cardamom</span><span class="logoSecondWord">farm</span></p>
+                <p class="street">24678 Rolling Hills Lane</p>
+                <p class="zone">Watertown, <abbr title="Maine">ME</abbr> 03241</p>
             </div>
             <div class="socialMedia">
-                <a href="#" id="instagramIcon"></a>
-                <a href="#" id="twitterIcon"></a>
-                <a href="#" id="facebookIcon"></a>
+                <a href="#" id="instagramIcon" class="image" aria-label="Go to our Instagram."></a>
+                <a href="#" id="twitterIcon" class="image" aria-label="Go to our Twitter."></a>
+                <a href="#" id="facebookIcon" class="image" aria-label="Go to our Facebook."></a>
             </div>
         </div>
     </footer>

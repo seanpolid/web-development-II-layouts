@@ -13,11 +13,11 @@
     }
 
     /* General */
-    .container {width: 1020px; margin: 0 auto;}
+    .container {width: 1020px; margin: 0 auto; position: relative;}
     body {color: var(--secondaryColor); overflow-x: hidden;}
     a {color: var(--primaryColor); text-decoration: none;}
     a:focus, .hamburgerMenu:focus {outline-offset: 4px; outline: 2px solid #000;}
-    header a:focus, .hamburgerMenu:focus {outline: 2px solid var(--primaryColor);}
+    header a:focus, .hamburgerMenu:focus, #jump:focus {outline: 2px solid var(--primaryColor);}
     h2, p {text-align: center;}
     header .logo, .banned a, .collage h2, .longboards li, footer {text-transform: uppercase;}
     header div, .longboards {font-family: 'Righteous', cursive;}
@@ -27,6 +27,10 @@
     .image {background-repeat: no-repeat; background-size: cover; background-position: center; display: block;}
     .imageDescr {font-size: 0; height: 0; width: 0;}
 
+    /* Jump */
+    #jump {display: block; position: absolute; top: 65px; left: 32px; font-size: 0;}
+    #jump:focus {font-size: 16px;}
+    
     /* Header */ 
     header {background-image: url(../assets/city-skate-hero.webp); height: 567px;}
     header div {font-weight: 400; padding: 14px 30px; display: flex; flex-direction: row; justify-content: space-between;}
